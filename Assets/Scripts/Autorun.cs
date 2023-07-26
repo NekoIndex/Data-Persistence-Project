@@ -6,8 +6,7 @@ public class Autorun : MonoBehaviour
 {
     public static Autorun Instance;
 
-    // variables moving across scenes
-    public int highScore;
+    // variable(s) moving across scenes
     public string playerID;
 
     private void Awake()
@@ -22,7 +21,6 @@ public class Autorun : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         // initialization of variables
-        highScore = 0;
         playerID = string.Empty;
     }
 }
